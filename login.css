@@ -1,0 +1,218 @@
+/* Profiles Page Specific Styles */
+
+#profiles-hero {
+    background-color: var(--background-light);
+    text-align: center;
+    padding: 100px 0;
+}
+
+#profiles-hero h1 {
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+#profiles-hero p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.login-form {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-form h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+.signup-link,
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--text-secondary);
+}
+
+.signup-link a,
+.login-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#student-signup-form {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.profile-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profile-card-content {
+    padding: 20px;
+}
+
+.profile-card-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.profile-card-content p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.profile-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.profile-social-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.profile-social-links a:hover {
+    color: var(--accent-color);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close-btn {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links .form-group {
+    flex: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .login-form {
+        padding: 20px;
+    }
+
+    .profiles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .modal-content {
+        margin: 0 15px;
+        padding: 20px;
+    }
+}

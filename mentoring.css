@@ -1,0 +1,203 @@
+/* Career Mentoring Page Styling */
+
+/* Mentoring Hero Section */
+#mentoring-hero {
+    background: linear-gradient(135deg, var(--background-light) 0%, rgba(126, 154, 176, 0.1) 100%);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.mentoring-hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mentoring-hero-content h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.mentoring-hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.mentoring-cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Mentoring Approach Section */
+.mentoring-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.mentoring-card {
+    flex: 1;
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.mentoring-card:hover {
+    transform: translateY(-10px);
+}
+
+.mentoring-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.mentoring-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.mentoring-card p {
+    color: var(--text-secondary);
+}
+
+/* Mentorship Programs Section */
+.mentorship-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.mentorship-item {
+    background-color: var(--background-light);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.mentorship-item:hover {
+    transform: translateY(-10px);
+}
+
+.mentorship-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.mentorship-item p {
+    color: var(--text-secondary);
+}
+
+/* Mentors Section */
+.mentors-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.mentor-card {
+    flex: 1;
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.mentor-card:hover {
+    transform: translateY(-10px);
+}
+
+.mentor-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.mentor-card h3 {
+    padding: 15px 15px 5px;
+    color: var(--primary-color);
+}
+
+.mentor-card p {
+    padding: 0 15px 15px;
+    color: var(--text-secondary);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .mentoring-grid,
+    .mentorship-content,
+    .mentors-grid {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .mentoring-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .mentoring-hero-content p {
+        font-size: 1rem;
+    }
+
+    .mentoring-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color, #007bff);
+    color: var(--white, #ffffff);
+    border-color: var(--primary-color, #007bff);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color, #0056b3);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color, #007bff);
+    border: 2px solid var(--primary-color, #007bff);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color, #007bff);
+    color: var(--white, #ffffff);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Button Adjustments */
+@media screen and (max-width: 768px) {
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

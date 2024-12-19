@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValidusEduTech - Development Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="profiles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/assests/logo.png" alt="ValidusEduTech Logo">
+            </div>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="ssp.html">Sunday Side Projects</a></li>
+                <li><a href="sk.html">Students Katta</a></li>
+                <li><a href="mentoring.html">Career Mentoring</a></li>
+                <li><a href="profiles.html">Profiles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profiles" class="section">
+            <div class="container">
+                <h2>Our Rising Tech Stars</h2>
+                <p class="section-subtitle">Meet the innovators who are shaping the future of technology</p>
+                
+                <div class="profiles-grid">
+                    <div class="profile-card">
+                        <img src="/api/placeholder/300/300" alt="Student Profile">
+                        <div class="profile-info">
+                            <h3>Aditya Sharma</h3>
+                            <p>Web Development Track</p>
+                            <div class="profile-highlights">
+                                <span>React Developer</span>
+                                <span>MERN Stack</span>
+                            </div>
+                            <div class="profile-projects">
+                                <a href="#" class="project-link">E-Commerce Platform</a>
+                                <a href="#" class="project-link">Social Media Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="profile-card">
+                        <img src="/api/placeholder/300/300" alt="Student Profile">
+                        <div class="profile-info">
+                            <h3>Priya Patel</h3>
+                            <p>AI & Machine Learning Track</p>
+                            <div class="profile-highlights">
+                                <span>Python Expert</span>
+                                <span>Data Science</span>
+                            </div>
+                            <div class="profile-projects">
+                                <a href="#" class="project-link">Sentiment Analysis Tool</a>
+                                <a href="#" class="project-link">Predictive Modeling</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="profile-card">
+                        <img src="/api/placeholder/300/300" alt="Student Profile">
+                        <div class="profile-info">
+                            <h3>Rahul Kumar</h3>
+                            <p>Mobile Development Track</p>
+                            <div class="profile-highlights">
+                                <span>Flutter Developer</span>
+                                <span>Cross-Platform</span>
+                            </div>
+                            <div class="profile-projects">
+                                <a href="#" class="project-link">Fitness Tracking App</a>
+                                <a href="#" class="project-link">Local Event Finder</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="profile-card">
+                        <img src="/api/placeholder/300/300" alt="Student Profile">
+                        <div class="profile-info">
+                            <h3>Sneha Reddy</h3>
+                            <p>Cloud & DevOps Track</p>
+                            <div class="profile-highlights">
+                                <span>AWS Certified</span>
+                                <span>Kubernetes</span>
+                            </div>
+                            <div class="profile-projects">
+                                <a href="#" class="project-link">Microservices Architecture</a>
+                                <a href="#" class="project-link">CI/CD Pipeline</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="login-section" class="section">
+            <div class="container">
+                <div class="login-container">
+                    <div class="login-form">
+                        <h2>Student Login</h2>
+                        <form id="student-login-form">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <p class="signup-link">Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+                        </form>
+
+                        <form id="student-signup-form" class="hidden">
+                            <h2>Student Sign Up</h2>
+                            <div class="form-group">
+                                <label for="signup-name">Full Name</label>
+                                <input type="text" id="signup-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-email">Email</label>
+                                <input type="email" id="signup-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-password">Password</label>
+                                <input type="password" id="signup-password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Create Account</button>
+                            <p class="login-link">Already have an account? <a href="#" id="show-login">Login</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="student-profiles" class="section hidden">
+            <div class="container">
+                <div class="profile-header">
+                    <h2>Our Students</h2>
+                    <button id="create-profile-btn" class="btn btn-secondary">Create Profile</button>
+                </div>
+                <div class="profiles-grid" id="profiles-container">
+                    <!-- Profiles will be dynamically populated here -->
+                </div>
+            </div>
+        </section>
+
+        <div id="profile-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Create Your Profile</h2>
+                <form id="profile-form">
+                    <div class="form-group">
+                        <label for="profile-photo">Profile Photo</label>
+                        <input type="file" id="profile-photo" name="profile-photo" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="tech-stack">Tech Stack</label>
+                        <input type="text" id="tech-stack" name="tech-stack" placeholder="e.g., React, Python, Machine Learning">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Personal Bio</label>
+                        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself, your passions, and your tech journey"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="projects">Projects</label>
+                        <textarea id="projects" name="projects" rows="3" placeholder="List your key projects"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="goals">Future Goals</label>
+                        <textarea id="goals" name="goals" rows="3" placeholder="What are your career and learning goals?"></textarea>
+                    </div>
+                    <div class="social-links">
+                        <div class="form-group">
+                            <label for="linkedin">LinkedIn</label>
+                            <input type="url" id="linkedin" name="linkedin">
+                        </div>
+                        <div class="form-group">
+                            <label for="github">GitHub</label>
+                            <input type="url" id="github" name="github">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Profile</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ValidusEduTech. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="profiles.js"></script>
+    <script src="auth.js"></script>
+    <script src="backend-auth-api.js"></script>
+</body>
+</html>

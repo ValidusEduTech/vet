@@ -1,0 +1,108 @@
+/* Academics Section */
+.academics-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.academics-card {
+    flex: 1;
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.academics-card:hover {
+    transform: translateY(-10px);
+}
+
+.academics-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.academics-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.academics-card p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+/* Curriculum Section */
+.curriculum-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.curriculum-item {
+    background-color: var(--background-light);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.curriculum-item:hover {
+    transform: translateY(-10px);
+}
+
+.curriculum-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.curriculum-item p {
+    color: var(--text-secondary);
+}
+
+/* Learning Outcomes Section */
+.outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.outcome-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.outcome-card:hover {
+    transform: translateY(-10px);
+}
+
+.outcome-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.outcome-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.outcome-card p {
+    color: var(--text-secondary);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .academics-grid,
+    .curriculum-content,
+    .outcomes-grid {
+        grid-template-columns: 1fr;
+    }
+}

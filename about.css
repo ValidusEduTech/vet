@@ -1,0 +1,244 @@
+.about-container{
+    margin-bottom: 100px;
+}
+/* Hero Section */
+.about-hero {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-hero-content {
+    flex: 1;
+}
+
+.about-hero-content h1 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.about-hero-image {
+    flex: 1;
+}
+
+.about-hero-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Journey Timeline */
+.journey-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.journey-timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: var(--secondary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-10px);
+}
+
+.timeline-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Core Values */
+.values-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.value-card {
+    flex: 1;
+    background-color: var(--background-light);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.value-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Leadership Section */
+.leadership-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.leader-card {
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+}
+
+.leader-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.leader-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.leader-info p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.leader-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .about-hero,
+    .journey-timeline,
+    .values-grid,
+    .leadership-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        width: 100%;
+        left: 0;
+    }
+
+    .journey-timeline::before {
+        left: 20px;
+    }
+}
+#our-goals {
+    background-color: var(--background-light);
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.goal-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.goal-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.goal-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.goal-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 1024px) {
+    .goals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
+}

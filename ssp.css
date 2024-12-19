@@ -1,0 +1,98 @@
+/* Sunday Side Projects Page Specific Styles */
+
+#ssp-hero {
+    background-color: var(--background-light);
+    text-align: center;
+    padding: 100px 0;
+}
+
+#ssp-hero h1 {
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+#ssp-hero p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.project-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 350px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    padding: 15px 20px 10px;
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    color: var(--text-secondary);
+    padding: 0 20px 20px;
+    font-size: 1rem;
+}
+
+.guidelines-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.guideline-item {
+    background-color: var(--background-light);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+}
+
+.guideline-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.guideline-item p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .project-grid,
+    .guidelines-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card,
+    .guideline-item {
+        max-width: 100%;
+    }
+}
